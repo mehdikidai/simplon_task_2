@@ -119,6 +119,7 @@ body {
           text-transform: capitalize;
           color: $main;
           font-weight: 900;
+          line-height: 1.4;
         }
       }
       &_2 {
@@ -130,14 +131,18 @@ body {
         p {
           font-size: 16px;
           color: $main;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
         }
         a {
           display: inline-flex;
-          padding: 10px 16px;
+          padding: 12.5px 16px;
           background: $main;
           max-width: 180px;
           justify-content: center;
-          border-radius: 20px;
+          border-radius: 22px;
           color: $whait;
           text-transform: capitalize;
           font-size: 14px;
@@ -169,7 +174,7 @@ body {
           border-radius: 50%;
           background-color: $main;
           right: 0;
-          top: 10%;
+          top: 15%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -179,6 +184,22 @@ body {
           text-transform: uppercase;
           font-size: 14px;
           line-height: 1.6;
+          box-shadow: 0 0 0 10px $main_white;
+          z-index: 2;
+          &::before{
+            content: "";
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            inset: 50%;
+            transform: translate(-50%,-50%) rotate(135deg);
+            z-index: -2;
+            border: 3px solid $main;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-radius: 50%;
+          }
+          
         }
         img {
           width: 100%;
