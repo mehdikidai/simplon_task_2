@@ -6,27 +6,3 @@ $main_white:#ebddeb;
 $box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 $space:15px;
 
-%btn {
-  padding: 8px 16px;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-@mixin media($breakpoint) {
-  @if ($breakpoint == "desktop") {
-    @media (max-width: 1200px) {
-      @content;
-    }
-  }
-  @if ($breakpoint == "ipad") {
-    @media (max-width: 1080px) {
-      @content;
-    }
-  }
-  @if ($breakpoint == "phone") {
-    @media (max-width: 600px) {
-      @content;
-    }
-  }
-}
