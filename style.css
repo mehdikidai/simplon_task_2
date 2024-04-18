@@ -61,7 +61,7 @@ body {
   gap: 8px;
 }
 .app .nav button.menu span {
-  width: 40px;
+  width: 30px;
   height: 3px;
   background: #201261;
   border-radius: 1.5px;
