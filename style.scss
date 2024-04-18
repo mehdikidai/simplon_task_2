@@ -99,6 +99,20 @@ body {
           color: $main;
           font-size: 16px;
           text-transform: capitalize;
+          position: relative;
+          span{
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: rgba($main, 0.8);
+            bottom: -6px;
+            transform-origin: 0 50%;
+            border-radius: 2px;
+            transition: all .4s ease-in-out;
+          }
+          &:hover span{
+            width: 100%;
+          }
         }
       }
     }
