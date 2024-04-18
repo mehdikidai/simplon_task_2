@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ABeeZee", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+button,
+div,
+a,
+li {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+
+

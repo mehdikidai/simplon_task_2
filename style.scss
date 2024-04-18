@@ -1,0 +1,197 @@
+@import "./reset";
+@import "./var";
+
+body {
+  background: $main_white;
+}
+.app {
+  min-height: 100dvh;
+  //background: rgb(21, 255, 0);
+  width: 100%;
+  max-width: 1200px;
+  padding-inline: 15px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  .nav {
+    width: 100%;
+    //background: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: $space * 2;
+    button {
+      height: 40px;
+      &.menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        gap: 8px;
+        span {
+          width: 40px;
+          height: 3px;
+          background: $main;
+          border-radius: 1.5px;
+        }
+      }
+      &.logo {
+        font-weight: 700;
+        font-size: 26px;
+        text-transform: capitalize;
+        border: none;
+        background: transparent;
+        margin-left: $space * 3;
+        color: $main;
+      }
+    }
+    .box_search {
+      width: 360px;
+      height: 40px;
+      background: $whait;
+      margin-right: auto;
+      border-radius: 20px;
+      form {
+        display: flex;
+        input {
+          flex: 1;
+          border: none;
+          padding-inline: $space * 2;
+          background: transparent;
+          color: $main;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+          }
+        }
+        button {
+          width: 50px;
+          cursor: pointer;
+          border: none;
+          background: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 22px;
+            path {
+              stroke: rgba($main, 0.6);
+            }
+          }
+        }
+      }
+    }
+    .list_items {
+      display: flex;
+      gap: $space * 2;
+      li {
+        a {
+          display: flex;
+          color: $main;
+          font-size: 16px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .box_one {
+    height: 210px;
+    //background: red;
+    margin-block: 40px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    .bx {
+      &_1 {
+        //background: greenyellow;
+        h1 {
+          font-size: 65px;
+          text-transform: capitalize;
+          color: $main;
+          font-weight: 900;
+        }
+      }
+      &_2 {
+        //background: yellow;
+        display: flex;
+        flex-direction: column;
+        padding-block: 25px;
+        gap: $space;
+        p {
+          font-size: 16px;
+          color: $main;
+        }
+        a {
+          display: inline-flex;
+          padding: 10px 16px;
+          background: $main;
+          max-width: 180px;
+          justify-content: center;
+          border-radius: 20px;
+          color: $whait;
+          text-transform: capitalize;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .products_box {
+    //height: 400px;
+    //background: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $space * 6;
+    .prod {
+      //background: blue;
+      display: flex;
+      flex-direction: column;
+      gap: $space * 1.5;
+      .photo {
+        height: 410px;
+        //background: yellow;
+        position: relative;
+        border-radius: 26px;
+        
+        span {
+          position: absolute;
+          width: 130px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          background-color: $main;
+          right: 0;
+          top: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color:$whait;
+          transform: translateX(50%);
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 26px;
+          border: 2px solid $main;
+        }
+      }
+      a {
+        height: 42px;
+        background: $main;
+        color: $whait;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 21px;
+      }
+    }
+  }
+}
