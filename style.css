@@ -282,11 +282,14 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
+  .app {
+    display: none;
+  }
   .box_mobile {
     width: 100vw;
     height: 100dvh;
     background: #201261;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     top: 0;
