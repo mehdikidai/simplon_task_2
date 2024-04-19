@@ -40,6 +40,23 @@ body {
   padding-top: 20px;
   padding-bottom: 100px;
 }
+.app .affect_bluer {
+  position: fixed;
+  width: 36vw;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.app .affect_bluer_1 {
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.app .affect_bluer_2 {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
 .app .nav {
   width: 100%;
   height: 80px;
@@ -212,7 +229,7 @@ body {
 }
 .app .products_box .prod .photo:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 8px -10px rgba(0, 0, 0, 0.2);
 }
 .app .products_box .prod .photo span {
   position: absolute;
