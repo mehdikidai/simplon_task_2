@@ -210,6 +210,23 @@ body {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.app .products_box .prod .photo .new {
+  position: absolute;
+  height: 24px;
+  width: 50px;
+  background: #ffc501;
+  color: #201261;
+  inset: 20px;
+  z-index: 3;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
 .app .products_box .prod .photo .radius {
   position: absolute;
   width: 20px;

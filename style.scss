@@ -28,12 +28,12 @@ body {
         &_1 {
             left: 0;
             top: 0;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
         &_2 {
             right: 0;
             top: 50%;
-            transform: translate(50%,-50%);
+            transform: translate(50%, -50%);
         }
     }
     .nav {
@@ -169,7 +169,7 @@ body {
                 a {
                     display: inline-flex;
                     padding: 12.5px 16px;
-                    background: $main;
+                    background: $bg_color;
                     max-width: 180px;
                     justify-content: center;
                     border-radius: 22px;
@@ -201,6 +201,24 @@ body {
                 box-shadow: 0 15px 5px -15px rgba(0, 0, 0, 0);
                 transition: all 0.3s ease-in-out;
                 cursor: pointer;
+
+                .new {
+                    position: absolute;
+                    height: 24px;
+                    width: 50px;
+                    background: #ffc501;
+                    color: $main;
+                    inset: 20px;
+                    z-index: 3;
+                    font-style: normal;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    border-radius: 6px;
+                    text-transform: capitalize;
+                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+                }
 
                 .radius {
                     position: absolute;
