@@ -200,6 +200,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
 }
 .app .products_box .prod .photo {
   height: 380px;

@@ -61,7 +61,7 @@
         <div class="app">
             <img src="./imgs/affect_1.svg" class="affect_bluer affect_bluer_1">
             <img src="./imgs/affect_2.svg" class="affect_bluer affect_bluer_2">
-            <div class="nav">
+            <div class="nav headline_nav">
                 <button class="menu">
                     <span></span>
                     <span></span>
@@ -109,12 +109,12 @@
             </div>
             <section class="box_one">
                 <div class="bx_1">
-                    <h1>
+                    <h1 class="headline">
                         upgrade your <br />
                         skincare routine
                     </h1>
                 </div>
-                <div class="bx_2">
+                <div class="bx_2 headline_p">
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Modi ab architecto ipsam nihil recusandae vel,
@@ -125,7 +125,7 @@
                 </div>
             </section>
             <section class="products_box">
-                <div class="prod">
+                <div class="prod widget">
                     <div class="photo">
                         <i class="new">new</i>
                         <img src="./imgs/p_1.jpg" alt="img" />
@@ -152,7 +152,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="prod">
+                <div class="prod widget">
                     <div class="photo">
                         <i class="new">new</i>
                         <img src="./imgs/p_2.jpg" alt="img" />
@@ -172,9 +172,11 @@
                         </svg>
                     </a>
                 </div>
-                <div class="prod">
+                <div class="prod widget">
                     <div class="photo">
+                        
                         <i class="new">new</i>
+                        
                         <img src="./imgs/p_3.jpg" alt="img" />
                     </div>
                     <a href="#"
@@ -194,5 +196,15 @@
                 </div>
             </section>
         </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ distance: '50px' });
+        ScrollReveal().reveal('.headline',{ interval: 200,origin: 'left' });
+        ScrollReveal().reveal('.headline_p',{ interval: 200,origin: 'right' });
+        ScrollReveal().reveal('.headline_nav',{ interval: 200,origin: 'top' });
+        ScrollReveal().reveal('.widget', { interval: 200 });
+
+    </script>
     </body>
+
 </html>

@@ -192,6 +192,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: $space;
+            position: relative;
             .photo {
                 height: 380px;
                 //background: yellow;
@@ -221,12 +222,14 @@ body {
                     opacity: 0;
                     transform-origin: -100px 50%;
                     transform: translateX(-50px) rotate(-12deg);
-                    transition:transform .3s cubic-bezier(1,-0.92,.27,1.55),opacity .1s ease-in-out;
+                    transition: transform 0.3s
+                            cubic-bezier(1, -0.92, 0.27, 1.55),
+                        opacity 0.1s ease-in-out;
                 }
 
-                &:hover .new{
-                  transform: translateX(0) rotate(0deg);
-                  opacity: 1;
+                &:hover .new {
+                    transform: translateX(0) rotate(0deg);
+                    opacity: 1;
                 }
 
                 .radius {
@@ -289,6 +292,7 @@ body {
                 border-radius: 21px;
                 gap: 4px;
                 text-transform: capitalize;
+                
                 svg {
                     width: 18px;
                     height: 18px;
@@ -298,6 +302,8 @@ body {
                 &:hover svg {
                     transform: translateX(4px);
                 }
+
+               
             }
         }
     }
