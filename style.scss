@@ -207,7 +207,7 @@ body {
                     position: absolute;
                     height: 24px;
                     width: 50px;
-                    background: #ffc501;
+                    background: $yellow;
                     color: $main;
                     inset: 20px;
                     z-index: 3;
@@ -218,7 +218,7 @@ body {
                     font-size: 12px;
                     border-radius: 6px;
                     text-transform: capitalize;
-                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.01);
                     opacity: 0;
                     transform-origin: -100px 50%;
                     transform: translateX(-50px) rotate(-12deg);
@@ -246,7 +246,7 @@ body {
                         top: 198px;
                         border-bottom-right-radius: 0;
                         border-top-right-radius: 20px;
-                        box-shadow: 4px -3px 0 3px #ebddeb;
+                        box-shadow: 4px -3px 0 3px $main_white;
                     }
                 }
                 &:hover {

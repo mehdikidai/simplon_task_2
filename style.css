@@ -21,7 +21,7 @@ li {
 }
 
 body {
-  background: #ebddeb;
+  background: #EBEDF2;
 }
 
 .box_mobile {
@@ -80,7 +80,7 @@ body {
 .app .nav button.menu span {
   width: 30px;
   height: 3px;
-  background: #201261;
+  background: #192753;
   border-radius: 1.5px;
 }
 .app .nav button.logo {
@@ -90,7 +90,7 @@ body {
   border: none;
   background: transparent;
   margin-left: 45px;
-  color: #201261;
+  color: #192753;
 }
 .app .nav .box_search {
   width: 296.667px;
@@ -107,7 +107,7 @@ body {
   border: none;
   padding-inline: 30px;
   background: transparent;
-  color: #201261;
+  color: #192753;
 }
 .app .nav .box_search form input:focus {
   box-shadow: none;
@@ -126,7 +126,7 @@ body {
   width: 22px;
 }
 .app .nav .box_search form button svg path {
-  stroke: rgba(32, 18, 97, 0.6);
+  stroke: rgba(25, 39, 83, 0.6);
 }
 .app .nav .list_items {
   display: flex;
@@ -134,7 +134,7 @@ body {
 }
 .app .nav .list_items li a {
   display: flex;
-  color: #201261;
+  color: #192753;
   font-size: 16px;
   text-transform: capitalize;
   position: relative;
@@ -143,7 +143,7 @@ body {
   position: absolute;
   width: 0;
   height: 3px;
-  background: rgba(32, 18, 97, 0.8);
+  background: rgba(25, 39, 83, 0.8);
   bottom: -6px;
   transform-origin: 0 50%;
   border-radius: 2px;
@@ -162,7 +162,7 @@ body {
 .app .box_one .bx_1 h1 {
   font-size: 65px;
   text-transform: capitalize;
-  color: #201261;
+  color: #192753;
   font-weight: 900;
   line-height: 1.4;
 }
@@ -174,7 +174,7 @@ body {
 }
 .app .box_one .bx_2 p {
   font-size: 16px;
-  color: #201261;
+  color: #192753;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -183,7 +183,7 @@ body {
 .app .box_one .bx_2 a {
   display: inline-flex;
   padding: 12.5px 16px;
-  background: #201261;
+  background: #192753;
   max-width: 180px;
   justify-content: center;
   border-radius: 22px;
@@ -215,8 +215,8 @@ body {
   position: absolute;
   height: 24px;
   width: 50px;
-  background: #ffc501;
-  color: #201261;
+  background: #f3d201;
+  color: #192753;
   inset: 20px;
   z-index: 3;
   font-style: normal;
@@ -226,7 +226,7 @@ body {
   font-size: 12px;
   border-radius: 6px;
   text-transform: capitalize;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.01);
   opacity: 0;
   transform-origin: -100px 50%;
   transform: translateX(-50px) rotate(-12deg);
@@ -245,13 +245,13 @@ body {
   right: 0;
   top: 32px;
   border-bottom-right-radius: 20px;
-  box-shadow: 6px 6px #ebddeb;
+  box-shadow: 6px 6px #EBEDF2;
 }
 .app .products_box .prod .photo .radius:nth-of-type(2) {
   top: 198px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 20px;
-  box-shadow: 4px -3px 0 3px #ebddeb;
+  box-shadow: 4px -3px 0 3px #EBEDF2;
 }
 .app .products_box .prod .photo:hover {
   transform: translateY(-4px);
@@ -262,7 +262,7 @@ body {
   width: 130px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #201261;
+  background-color: #192753;
   right: 0;
   top: 60px;
   display: flex;
@@ -274,7 +274,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.6;
-  box-shadow: 0 0 0 10px #ebddeb;
+  box-shadow: 0 0 0 10px #EBEDF2;
   z-index: 2;
 }
 .app .products_box .prod .photo img {
@@ -287,7 +287,7 @@ body {
 }
 .app .products_box .prod a {
   height: 42px;
-  background: #201261;
+  background: #192753;
   color: #fff;
   font-size: 14px;
   display: flex;
@@ -314,7 +314,7 @@ body {
   .box_mobile {
     width: 100vw;
     height: 100dvh;
-    background: #201261;
+    background: #192753;
     display: flex;
     align-items: center;
     justify-content: center;
