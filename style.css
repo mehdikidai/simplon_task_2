@@ -57,6 +57,24 @@ body {
   top: 50%;
   transform: translate(50%, -50%);
 }
+.app .menu_continer {
+  width: 100vw;
+  max-width: 100px;
+  position: fixed;
+  height: 100dvh;
+  background: #192753;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0 0;
+  transform: scaleX(0);
+  border-radius: 0 50vh 50vh 0;
+  z-index: 99;
+  transition: transform 0.2s linear, border-radius 0.1s linear;
+}
+.app .menu_continer_active {
+  transform: scaleX(1);
+  border-radius: 0;
+}
 .app .nav {
   width: 100%;
   height: 80px;
@@ -91,15 +109,15 @@ body {
 .app .nav button.menu span:nth-child(2) {
   width: 15px;
 }
-.app .nav button.menu:hover span:nth-child(2) {
+.app .nav button.menu_active span:nth-child(2) {
   translate: 60px 0;
   opacity: 0;
 }
-.app .nav button.menu:hover span:nth-child(1) {
+.app .nav button.menu_active span:nth-child(1) {
   rotate: 45deg;
   translate: 0 11.5px;
 }
-.app .nav button.menu:hover span:nth-child(3) {
+.app .nav button.menu_active span:nth-child(3) {
   rotate: -45deg;
   translate: 0 -10.5px;
 }

@@ -58,11 +58,13 @@
                 </rect>
             </svg>
         </div>
+        
         <div class="app">
+            <div class="menu_continer" id="menu_continer"></div>
             <!-- <img src="./imgs/affect_1.svg" class="affect_bluer affect_bluer_1">
             <img src="./imgs/affect_2.svg" class="affect_bluer affect_bluer_2"> -->
             <div class="nav headline_nav">
-                <button class="menu">
+                <button class="menu" id="menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -197,6 +199,10 @@
         </div>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script>
+
+            const menu = document.getElementById('menu')
+            const menu_continer = document.getElementById('menu_continer')
+
             ScrollReveal({ distance: "50px" });
             ScrollReveal().reveal(".headline", {
                 interval: 200,
@@ -211,6 +217,13 @@
                 origin: "top",
             });
             ScrollReveal().reveal(".widget", { interval: 200 });
+
+            menu?.addEventListener('click',function(){
+
+                this.classList.toggle('menu_active')
+                menu_continer?.classList.toggle('menu_continer_active')
+
+            })
 
         </script>
     </body>
